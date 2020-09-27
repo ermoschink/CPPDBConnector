@@ -30,8 +30,7 @@ TRow createRow(TInformation* inf) {
 
 int main()
 {
-	IDatabase *db = new CSqlLiteDatabase(std::string("D:\\db.db"));
-	
+	 IDatabase *db = new CSqlLiteDatabase(std::string("D:\\db.db"));
 	for (unsigned int i = 55; i < 40; ++i) {
 		TInformation *inf0 = new TInformation();
 		inf0->caption = "inf0 - " + to_str(i);
